@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import patheffects
 
 # Load progress data
-with open("progresscode.json", "r") as f:
+with open("progresslemur.json", "r") as f:
     data = json.load(f)
 
 categories = ['Easy', 'Medium', 'Hard']
@@ -54,5 +54,5 @@ for i, (category, color, comp, total) in enumerate(zip(categories, colors, compl
            fontsize=35, fontweight='bold', color=color,
            ha='left', va='center')
 
-plt.savefig("progresscode.png", transparent=True, bbox_inches='tight', pad_inches=0)
+plt.savefig("progresslemur.png", transparent=True, bbox_inches='tight', pad_inches=0)
 plt.close()
