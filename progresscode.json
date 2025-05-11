@@ -1,0 +1,14 @@
+{
+  "Easy": {
+    "completed": 16,
+    "total": 876
+  },
+  "Medium": {
+    "completed": 4,
+    "total": 1840
+  },
+  "Hard": {
+    "completed": 0,
+    "total": 832
+  }
+}

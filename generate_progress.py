@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import patheffects
 
 # Load progress data
-with open("progress.json", "r") as f:
+with open("progresscode.json", "r") as f:
     data = json.load(f)
 
 categories = ['Easy', 'Medium', 'Hard']
@@ -46,13 +46,13 @@ ax.text(0, 0, f"{percent_total}%", ha='center', va='center',
 
 # Category labels on the right
 label_x = 1.0  # X position for labels
-label_y_positions = [0.2, 0, -0.2]  # Y positions for Easy/Medium/Hard
+label_y_positions = [0.3, 0, -0.3]  # Y positions for Easy/Medium/Hard
 
 for i, (category, color, comp, total) in enumerate(zip(categories, colors, completed, totals)):
     ax.text(label_x, label_y_positions[i], 
            f"{category} - {comp}/{total}",
-           fontsize=14, fontweight='bold', color=color,
+           fontsize=35, fontweight='bold', color=color,
            ha='left', va='center')
 
-plt.savefig("progress.png", transparent=True, bbox_inches='tight', pad_inches=0)
+plt.savefig("progresscode.png", transparent=True, bbox_inches='tight', pad_inches=0)
 plt.close()
